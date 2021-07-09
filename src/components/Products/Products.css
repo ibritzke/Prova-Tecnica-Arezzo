@@ -1,0 +1,159 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px 100px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.main-header {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 50px 60px 20px 60px;
+}
+.title {
+  font-size: 20px;
+  font-weight: 200;
+  opacity: 0.9;
+  padding: 10px;
+}
+.subtitle {
+  font-size: 12px;
+  font-weight: 200;
+  font-variant: normal;
+  padding: 0px;
+  letter-spacing: 1px;
+}
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.select {
+  margin-right: 30px;
+  float: right;
+  display: flex;
+  width: 10em;
+  height: 2em;
+  line-height: 2;
+  background: #ffffff;
+  overflow: hidden;
+  border-radius: 0;
+  align-self: flex-end;
+}
+select {
+  flex: 1;
+  padding: 0 0.5em;
+  color: #000000;
+  cursor: pointer;
+}
+.main-list {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  margin-left: 30px;
+  cursor: pointer;
+
+}
+.product:hover{
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.product-img {
+  width: 260px;
+  height: 280px;
+}
+.product-name {
+  padding-top: 40px;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+
+  max-width: 35ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.product-price {
+  padding-top: 05px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.main-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.central {
+  width: 36px;
+  height: 36px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.central {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #c5c5c5;
+  color: #000000;
+  cursor: pointer;
+  background: #ffffff;
+  
+}
+.central[data-is-active="true"] {
+  color: white;
+  background-color: #000000;
+}
+@media (max-width: 880px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px 50px;
+    box-sizing: border-box;
+    height: auto;
+  }
+  .main-header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 50px 30px 20px 30px;
+  }
+  
+}
+@media (max-width: 777px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px 0px;
+    box-sizing: border-box;
+    height: auto;
+  }
+  .select {
+    margin-top: 20px;
+    align-self: center;
+  }
+  .product {
+  margin-left:0px;
+ 
+  
+  }
+}
